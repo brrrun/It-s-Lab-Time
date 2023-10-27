@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    text-align: center;
+  }
+  
+  #game-intro {
+    padding: 20px 0px;
+  }
+  
+  #game-container {
+    display: flex;
+    width: 100vw;
+    padding: 20px 0px;
+    justify-content: center;
+  }
+  
+  #game-screen {
+    display: none;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../images/Background-laptop.png");
+    background-size: cover;
+    animation: slide 5s linear infinite;
+  }
+
+  #game-won{
+    display: none;
+    font-size: 150%;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #obstacles img{
+    width: 125px;
+    height: 125px;
+  }
+
+  .obstacle.one{
+    position: absolute;
+    top: 302px;
+    left: 160px;
+  }
+
+  .obstacle.two{
+    position: absolute;
+    top: 452px;
+    left: 430px;
+  }
+
+  .obstacle.three{
+    position: absolute;
+    top: 202px;
+    left: 680px;
+  }
+
+  .obstacle.four{
+    position: absolute;
+    top: 452px;
+    left: 930px;
+  }
+
+  .obstacle.five{
+    position: absolute;
+    top: 702px;
+    left: 1260px;
+  }
+ 
+  
+  #game-end {
+    display: none;
+    font-size: 150%;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .game-intro p {
+    font-size: 18px;
+    font-family: "Verdana";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .logo-img {
+    width: 450px;
+  }
+  
+  .arrows-img {
+    width: 150px;
+  }
+  
+  body button {
+    font-size: 30px;
+    background-color: purple;
+    color: #fff;
+    padding: 20px 40px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  #stats{
+    display: none;
+    font-size: 50px;
+    align-items: center;
+    padding-top: 300px;
+  }
+  
+  .introText{
+    font-size: 200%;
+    align-items: center;
+    line-height: 130%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+
+  .introHint{
+    font-size: 150%;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }

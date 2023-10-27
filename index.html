@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-Time</title>
+    <link rel="stylesheet" href="docs/styles/style.css">
+    
+    
+</head>
+<body>
+    <main>
+        <!-- #game-intro is initially shown on the game start screen -->
+        <div id="game-intro">
+          <img src="docs/images/logo (1).png" alt="" class="logo-img" />
+          <br />
+          <button id="start-button">Start Game</button>
+          <p class="introText">You are a bright student at the Ironhack WebDev Bootcamp, <br>
+            and it is time to show up your skills. It's Lab Time! <br><br>
+             Use the arrow keys to reach the other end of the screen. <br> 
+             You have 36 seconds but beware... <br>
+             in order to get it right you have to avoid <br> 
+             code errors && being caught by Jasmin <br>
+              when she wakes up. </p>
+               <p class="introHint">HINT: If you are moving slow, try getting a Ticket...</p>
+          <img src="docs/images/arrows (1).png" alt="" class="arrows-img" />
+        </div>
+  
+        <div id="game-container">
+          <div id="stats">
+            <audio id="audio-start" src="docs/audio/start.wav"></audio>
+            <audio id="audio-ticket" src="docs/audio/ticket.mp3"></audio>
+            <audio id="audio-jasmine1" src="docs/audio/hello-02.mp3"></audio>
+            <audio id="audio-jasmine2" src="docs/audio/hello-06.mp3"></audio>
+            <audio id="audio-jasmine3" src="docs/audio/hello-04.mp3"></audio>
+            <audio id="audio-jasmine4" src="docs/audio/hello-03.mp3"></audio>
+            <audio id="audio-jasmine5" src="docs/audio/hello-05.mp3"></audio>
+            <p>Count </p><span id="counter">0</span>
+          </div>
+          <!-- #game-screen is initially hidden using CSS style display: none -->
+          <div id="game-screen">
+           
+          </div>
+        </div>
+  
+        <!-- #game-end is initially hidden using CSS style display: none -->
+        <div id="game-end">
+          <audio id="audio-lose" src="docs/audio/loser.mp3"></audio>
+          <img src="docs/images/logo (1).png" alt="" class="logo-img" />
+          <h1>Game Over!</h1>
+          <h2>Perhaps you should've studied more...</h1>
+          <br />
+          <button id="restart-button">Restart</button>
+        </div>
+
+        <div id="game-won">
+            <audio id="audio-win" src="docs/audio/achievement.mp3"></audio>
+            <img src="docs/images/logo (1).png" alt="" class="logo-img" />
+            <h1>Congratulations!</h1>
+            <h2>You have sucessfully completed a Lab!</h1>
+            <br />
+            <button id="restart-button2">Restart</button>
+          </div>
+      </main>
+
+    <script src="./docs/js/jasmine.js"></script>
+    <script src="./docs/js/obstacle.js"></script>
+    <script src="./docs/js/player.js"></script>
+    <script src="./docs/js/game.js"></script>
+    <script src="./docs/js/ticket.js"></script>
+    <script src="./docs/js/script.js"></script>
+</body>
+</html>
